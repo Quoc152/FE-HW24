@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="w-full h-screen bg-slate-200 flex flex-col justify-center items-center gap-8">
+    <!-- Set Timeout -->
+     <div class="w-[300px] flex flex-col justify-around bg-white rounded-md gap-3 p-3">
+        <header class="w-full text-center">
+            <h1 class="text-4xl">Set Timeout</h1>
+        </header>
+        <hr>
+        <div>
+            <form  class="flex flex-col gap-4" action="">
+                <div class="flex flex-col gap-1">
+                    <label for="timeout">Nhập số giây:</label>
+                    <input type="number" id="timeout" name="timeout" class="w-full bg-slate-100 rounded p-1" placeholder="...">
+                </div>
+                <div class="w-full flex justify-around">
+                    <button onclick="startTimer()" type="button" class="w-[100px] h-[35px] font-bold px-2 rounded-xl bg-teal-400 text-white  hover:bg-teal-300 active:bg-teal-500">Start</button>
+                    <button onclick="clearTimer()" type="button" class="w-[100px] h-[35px] font-bold px-2 rounded-xl bg-red-400 text-white  hover:bg-red-300 active:bg-red-500">Clear</button>
+                </div>
+            </form>
+        </div>
+     </div>
+    <!-- Set Interval -->
+     <div class="w-[300px] flex flex-col justify-around bg-white rounded-md gap-3 p-3">
+        <header class="w-full text-center">
+            <h1 class="text-4xl">Set Interval</h1>
+        </header>
+        <hr>
+        <form action="" class="flex flex-col gap-4">
+            <div>
+                <h1 id="animatedText" class="text-4xl">Hello!</h1>
+            </div>
+            <hr>
+            <div class="w-full flex justify-center">
+                <button onclick="clearAnimation()" type="button" class="w-[100px] h-[35px] font-bold px-2 rounded-xl bg-red-400 text-white  hover:bg-red-300 active:bg-red-500">Clear</button>
+            </div>
+        </form>
+     </div>
+</body>
+</html>
